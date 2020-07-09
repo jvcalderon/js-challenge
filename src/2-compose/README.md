@@ -12,4 +12,12 @@ Key concepts:
 
 You have to create a variadic function (who can receive a not defined number of arguments) to receive functions and compose them:
 
-<script async src="./problem.js" charset="utf-8"></script>
+```javascript
+const compose = x => x //TODO
+
+const say = (name) => name
+const greeting = (name) => 'Hi ' + name
+const greet = compose(console.log, greeting, say)
+
+greet('Anacleto') // Just like console.log(greeting(say('Anacleto'))) //returns 'Hi Anacleto'
+```

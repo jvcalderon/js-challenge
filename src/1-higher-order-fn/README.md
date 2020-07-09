@@ -9,4 +9,10 @@ This is a key concept of lambda calculus and functional programming.
 
 You just need to provide a function who receives and run a function passed as argument.
 
-<script async src="./problem.js" charset="utf-8"></script>
+```javascript
+const name = () => 'Periquillo'
+
+const sayHello = //TODO
+
+console.log(sayHello(name)) //Must print "Hello Periquillo!"
+```
